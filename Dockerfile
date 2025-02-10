@@ -1,4 +1,4 @@
-FROM python3.9-slim
+FROM python3.11-slim
 WORKDIR / app
 COPY requirements.txt .
 COPY main.py .
