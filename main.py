@@ -17,4 +17,4 @@ with open('iris_model.pkl','rb') as f:
 def predict(data:IrisInput):
   input_data =[[data.sl,data.sw,data.pl,data.pw]]
   prediction = model.predict(input_data)[0]
-  return {Prediction is' :int(prediction)}
+  return {'Prediction is' :int(prediction)}
