@@ -1,0 +1,9 @@
+FROM python3.9-slim
+WORKDIR / app
+COPY requirements.txt
+COPY main.py
+COPY iris_model.pkl
+RUN pip install --no-cache-dir -r requirement.txt
+EXPOSE 8000
+CMD ["uvicorn","main:app","--host","0.0.0.0","--port","8000"]
+
