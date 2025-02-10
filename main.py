@@ -10,7 +10,7 @@ with open('iris_model.pkl','rb') as f:
     pl:float
     pw:float
     @app.get("/")
-    defread_root():
+    def read_root():
       return{'message','welcome to fastapi'}
 
 @app.post("/predict/")
