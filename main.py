@@ -1,5 +1,5 @@
 import pickle
-from fastapi importFastAPI
+from fastapi import FastAPI
 from pydantic import BaseModel
 with open('iris_model.pkl','rb') as f:
   model = pickle.load(f)
